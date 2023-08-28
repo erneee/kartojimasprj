@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Atlikejai</h1>
+<p>Musu irasu atlikeju sarasas</p>
+<ul>
+    {% for artistas in artistai_t %}
+    <li>{{ artistas.pavadinimas }} {{ artistas.biografija }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
